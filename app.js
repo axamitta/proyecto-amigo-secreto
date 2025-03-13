@@ -5,14 +5,13 @@ function agregarAmigo(){
     let inputAmigo = document.getElementById("amigo");
     let nombreAmigo = inputAmigo.value;
 
-   if(!nombreAmigo){
-        alert("Por favor, ingrese un nombre");
+    if(!nombreAmigo){
+        alert("Por favor, ingresa un nombre");
         return;
-   }
-   amigo.push(nombreAmigo);
-   inputAmigo.value = "";
-   inputAmigo.focus();
+    }
+    amigo.push(nombreAmigo);
+    inputAmigo.value = "";
+    inputAmigo.focus();
+
+   
 };
-function renderizarAmigos(){
-    
-}
