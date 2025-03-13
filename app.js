@@ -3,7 +3,7 @@ let amigo = [];
 
 function agregarAmigo(){
     let inputAmigo = document.getElementById("amigo");
-    let nombreAmigo = inputAmigo.value;
+    let nombreAmigo = inputAmigo.value.trim();
 
     if(!nombreAmigo){
         alert("Por favor, ingresa un nombre");
@@ -37,4 +37,9 @@ function sortearAmigo(){
 
     let limpiarLista = document.getElementById("listaAmigos");
     limpiarLista.innerHTML = "";
+    amigo = [];
+
+    setTimeout(() => {
+        resultado.innerHTML = "";
+    }, 5000); 
 }
