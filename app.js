@@ -19,11 +19,11 @@ function listarAmigos(){
     let listaAmigos = document.getElementById("listaAmigos");
     listaAmigos.innerHTML = "";
 
-    amigo.forEach(amigo => {
+    for(let i =0; i < amigo.length; i++){
         let item = document.createElement("li");
-        item.textContent = amigo;
+        item.textContent = amigo[i];
         listaAmigos.appendChild(item);
-    });
+    }
 }
 
 function sortearAmigo(){
